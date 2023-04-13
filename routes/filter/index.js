@@ -1,11 +1,11 @@
-// const express = require("express");
+const express = require("express");
 
 
-// const route = express.Router();
+const route = express.Router();
 
-// const filterData = require("../../controller/filter/index.js");
+const filterData = require("../../controller/filter/index.js");
 
-// route.get('/', filterData);
+route.get('/', filterData);
 
 
-// module.exports = route;
+module.exports = route;

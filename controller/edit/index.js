@@ -6,14 +6,14 @@ const editContact = async (req, res) => {
         console.log(id);
 
         const editData = await contactInfo.findByIdAndUpdate(id, req.body, { new: true })
+
         console.log("updated");
-        editData;
+
+        res.status(200).json({ editData })
     } catch (error) {
         console.log(error);
     }
-    res.status(200).json({
-        message: "updated"
-    })
+
 
 }
 
