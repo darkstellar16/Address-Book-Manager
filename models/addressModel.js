@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose");          //mongoose has been required
 
 
 const contactSchema = new mongoose.Schema(                     //creating a mongoose schema which will be in the database....

@@ -12,13 +12,13 @@ const filter = require("../routes/filter/index.js")
 
 
 
-route.use('/add', add);
+route.use('/add', add);        //add route
 
-route.use('/del', del);
+route.use('/del', del);         //delete route
 
-route.use('/edit', edit);
+route.use('/edit', edit);      //edit route
 
-route.use('/filter',filter);
+route.use('/filter',filter);  //filter route
 
 
 module.exports = route;
