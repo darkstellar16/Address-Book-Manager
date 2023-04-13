@@ -6,10 +6,9 @@ const addData = async (req, res) => {
 
     try {
 
-        const info = await contactInfo.create({ name: req.body.name,
+        const info = await contactInfo.create({ name: req.body.name,      //data is created in the databse
              mobile: req.body.mobile })
-
-        info.save();
+        info.save();                                                      // data is saved in the database
         res.status(200).json({
             message: "Added Successfully"
         })
@@ -20,6 +19,5 @@ const addData = async (req, res) => {
 
     }
 }
-
 
 module.exports = addData;

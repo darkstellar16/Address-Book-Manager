@@ -1,8 +1,10 @@
-// const express = require("express");
+const express = require("express");
 
 
-// const route = express.Router();
+const route = express.Router();
 
-// const editData = require("../../controller/edit/index.js");
+const editData = require("../../controller/edit/index.js");
 
-// route.put('/:id', editData);
+route.patch('/:id', editData);
+
+module.exports = route

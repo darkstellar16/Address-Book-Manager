@@ -8,17 +8,17 @@ const del = require("../routes/delete/index.js")
 
 const edit = require("../routes/edit/index.js")
 
-const filter = require("../routes/filter/index.js")
+// const filter = require("../routes/filter/index.js")
 
 
 
-route.use('/add',add);
+route.use('/add', add);
 
-// route.use('/del',del);
+route.use('/del', del);
 
-// route.use('/edit',edit);
+route.use('/edit', edit);
 
 // route.use('/filter',filter);
 
 
-module.exports=route;
+module.exports = route;
